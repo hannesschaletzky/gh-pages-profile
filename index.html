@@ -12,15 +12,18 @@
       let diff = ((today - until)/(1000*60*60*24*365)).toFixed(0);
       return diff
     }
-    function setYears() {
+    function onLoad() {
+      //set age
       const label = document.getElementById("label_age");
       label.innerText = "Age: " + getYears(new Date(1995, 2, 3))
-      console.log(label)
+      //set last edited
+      const div = document.getElementById("last_edited");
+      div.innerText = "Last Edited: " + new Date().toDateString()
     }
     // alert("Today's date is " + getYears());
   </script>
 </head>
-<body onload="setYears()">
+<body onload="onLoad()">
 
   <h1 class="text-center">Profile</h1>
 
@@ -71,6 +74,8 @@
         <i class="fab fa-github-square icon"></i>
       </a>
     </footer>
+
+    <div id="last_edited"></div>
 
   </main>
 
