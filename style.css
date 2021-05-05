@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+
+body {
+  background-color: rgb(240, 240, 240);
+  font-family: 'Roboto Mono', monospace;
+}
+
+header {
+  display: flex;
+}
+
+main {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  display: flex;
+}
+
+#person_con {
+  padding: 20px 0px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.card {
+  width: 70%;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 2px 2px rgb(210,210,210);
+}
+
+.card:hover {
+  font-weight: bold;
+}
+
+#picture {
+  border-radius: 50%;
+  height: 200px;
+}
+
+#btn-discover {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 1px 1px black;
+  color: white;
+  background-color: rgb(4,100,48);
+  font-family: 'Roboto Mono', monospace;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer !important;
+}
+
+#btn-discover:hover {
+  background-color: rgb(4,140,48);
+}
+
+#btn-discover:active {
+  box-shadow: none;
+}
+
+.link {
+  margin: 10px;
+}
+
+.icon {
+  font-size: 50px;
+  color: gray;
+}
+
+.icon:hover {
+  color: rgb(180,180,180);
+}
+
+.text-center {
+  text-align: center;
+}
+
+
+
+

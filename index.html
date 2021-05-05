@@ -1,0 +1,77 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Profile Hannes Schaletzky</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+  <script>
+    function getYears(until) {
+      let today = new Date();
+      let diff = ((today - until)/(1000*60*60*24*365)).toFixed(0);
+      return diff
+    }
+    function setYears() {
+      const label = document.getElementById("label_age");
+      label.innerText = "Age: " + getYears(new Date(1995, 2, 3))
+      console.log(label)
+    }
+    // alert("Today's date is " + getYears());
+  </script>
+</head>
+<body onload="setYears()">
+
+  <h1 class="text-center">Profile</h1>
+
+  <main>
+
+    <header>
+      <img id="picture" src="images/Hannes.png" alt="Hannes Picture">
+      <div id="person_con">
+        <label>Name: Hannes Schaletzky</label>
+        <label>Profession: Fullstack Developer</label>
+        <label>Languages: Ruby, TypeScript, C#</label>
+        <label id="label_age"></label>
+        <label>Origin: Germany</label>
+      </div>
+    </header>
+
+    <div class="card">
+      <p class="text-center">
+        Enthusiastic Software Developer who just graduated from the
+        LeWagon 9 weeks coding bootcamp 🖥 with a love for digital products and automation 🤖
+      </p>
+    </div>
+
+    <div class="card">
+      <p class="text-center">
+        I cannot imagine myself without sports. I love beach volleyball 🏐 as it combines
+        a competitive team mode and a sunny outside activity
+      </p>
+    </div>
+
+    <div class="card">
+      <p class="text-center">
+        As life is usually fast paced, I love to travel with my bicycle 🚲 Bikepacking is
+        freedom in its purest form. Taking a slow day or stopping whereever I want
+        is just great
+      </p>
+    </div>
+
+    <button id="btn-discover" onclick="window.open('https://www.lewagon.com/')">
+      Discover LeWagon
+    </button>
+
+    <footer>
+      <a class="link" href="https://www.linkedin.com/in/hannesschaletzky/" target="_blank">
+        <i class="fab fa-linkedin icon"></i>
+      </a>
+      <a class="link" href="https://github.com/hannesschaletzky" target="_blank">
+        <i class="fab fa-github-square icon"></i>
+      </a>
+    </footer>
+
+  </main>
+
+</body>
+</html>
