@@ -54,8 +54,8 @@ footer {
   border-radius: 8px;
   border: none;
   box-shadow: 1px 1px black;
-  color: white;
-  background-color: rgb(4,100,48);
+  color: black;
+  background-color: rgb(253,172,34);
   font-family: 'Roboto Mono', monospace;
   font-weight: bold;
   font-size: 15px;
@@ -63,7 +63,7 @@ footer {
 }
 
 #btn-discover:hover {
-  background-color: rgb(4,140,48);
+  background-color: rgb(253,190,34);
 }
 
 #btn-discover:active {
@@ -76,11 +76,11 @@ footer {
 
 .icon {
   font-size: 50px;
-  color: gray;
+  color: rgb(180,180,180);
 }
 
 .icon:hover {
-  color: rgb(180,180,180);
+  color: rgb(160,160,160);
 }
 
 #last_edited {
